@@ -1,0 +1,123 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+@font-face
+	{font-family:"Helvetica Neue";
+	panose-1:2 0 5 3 0 0 0 2 0 4;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+code
+	{font-family:Courier;}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%;
+text-autospace:none'><span lang=EN-US style='font-family:"Microsoft YaHei";
+color:#3E3E3E'>virtualbox</span><span style='font-family:"Microsoft YaHei";
+color:#3E3E3E'>里新安装的<span lang=EN-US>Centos 7 </span>的分辨率默认的应该是<span
+lang=EN-US>800*600</span>。 如果是<span lang=EN-US>‘</span>最小化安装<span lang=EN-US>’</span>的<span
+lang=EN-US>Centos7 </span>进入的就是命令模式 。如果安装的是带有<span lang=EN-US>GUI</span>的<span
+lang=EN-US>Centos7 </span>可在桌面模式下<span lang=EN-US> Ctrl+Alt+F1/F2/F3/F4 </span>组合件来切换命令模式和桌面模式。进入命令模式
+开始修改操作： 输入下面命令： </span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr style='height:18.4pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:18.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>[root@localhost ~]# gedit /boot/grub/grub.conf</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%;
+text-autospace:none'><span lang=EN-US style='font-family:"Microsoft YaHei";
+color:#3E3E3E'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%;
+text-autospace:none'><span style='font-family:"Microsoft YaHei";color:#3E3E3E'>修改<span
+lang=EN-US>grub.cfg</span>文件： 在标注地方末尾加上<span lang=EN-US>“</span></span><span
+lang=EN-US style='font-family:"Microsoft YaHei";color:#B80E3D'>vga = ask</span><span
+style='font-family:"Microsoft YaHei";color:#B80E3D'>“，</span><span
+style='font-family:"Microsoft YaHei";color:#3E3E3E'>然后保存<span lang=EN-US>grub.cfg</span>文件。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%;
+text-autospace:none'><span lang=EN-US style='font-family:"Microsoft YaHei";
+color:#3E3E3E'><img width=718 height=65 id="图片 4"
+src="centos分辨率.fld/image001.png"></span><span lang=EN-US style='font-family:
+"Microsoft YaHei";color:#3E3E3E'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%;
+text-autospace:none'><span lang=EN-US style='font-family:"Microsoft YaHei";
+color:#3E3E3E'>vga = ask</span><span style='font-family:"Microsoft YaHei";
+color:#3E3E3E'>意味着每次开始的时候都会询问分辨率。如果确定了，也可以将<span lang=EN-US>ask</span>改成具体的分辨率指（下文图示）。
+</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%;
+text-autospace:none'><span style='font-family:"Microsoft YaHei";color:#3E3E3E'>重启<span
+lang=EN-US>reboot</span>，会看到下面界面： </span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%;
+text-autospace:none'><span lang=EN-US style='font-family:"Microsoft YaHei";
+color:#3E3E3E'><img width=716 height=423 id="图片 1"
+src="centos分辨率.fld/image002.png"></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:200%;
+text-autospace:none'><span style='font-family:"Microsoft YaHei";color:#3E3E3E'>根据自己的屏幕选择合适的分辨率了，输入分辨率代码，<span
+lang=EN-US>Enter</span>键确认。 例如我的电脑选择最后一项，输入代码“<span lang=EN-US>34c</span>”</span></p>
+
+</div>
+
+</body>
+
+</html>

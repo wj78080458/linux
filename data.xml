@@ -1,0 +1,78 @@
+<item data="配置IP">
+	<keyword>ip 静态 动态 dhcp dns 网卡 配置 network</keyword>
+	<abstract>网络配置文件/etc/sysconfig/network-scripts/ifcfg-eth0，可以通过它配置ip等网络信息。同时也可以用图形化界面来配置</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="禁止ping">
+	<keyword>ping 禁止 ICMP</keyword>
+	<abstract>通过配置ICMP协议来启用或者禁止其他机器ping该主机</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="安装centos">
+	<keyword>安装 系统 centos</keyword>
+	<abstract>如何通过光盘安装centos</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="centos分辨率">
+	<keyword>分辨率 centos</keyword>
+	<abstract>centos在虚拟机中默认只有800*600的分辨率，我们可以通过修改grub文件来配置分辨率</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="禁用ipv6">
+	<keyword>ipv6 禁用</keyword>
+	<abstract>通过配置文件，禁止使用ipv6，这样可以提高网络效率</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="自动纠错路径">
+	<keyword>纠错 路径 bashrc</keyword>
+	<abstract>如果输入的路径出错少，那么可以通过修改配置文件，然系统自己来纠错</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="登录前后信息">
+	<keyword>登录 信息 motd issue</keyword>
+	<abstract>通过修改配置文件，登录前或者登录后显示的内容</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="开机等待时间">
+	<keyword>开机 等待 时间 grub menu</keyword>
+	<abstract>可以自定义开机等待时间，建议在2s以上</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="开机启动数字键盘">
+	<keyword>启动 开机 数字 键盘 rc.local</keyword>
+	<abstract>修改rc.local文件，实现开机启动数字键盘</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="设置服务开关">
+	<keyword>服务 ntsysv setup 开关 chkconfig level</keyword>
+	<abstract>通过图形界面可以修改服务默认启动状态，也可以通过chkconfig命令来实现</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
+<item data="默认启动方式">
+	<keyword>启动 方式 inittab</keyword>
+	<abstract>通过inittab可以修改默认的系统启动方式</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+<item data="关闭selinux">
+	<keyword>selinux setenforce getenforce</keyword>
+	<abstract>可以通过各种配置方式来关闭selinux，建议使用文中的第二种方式</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
+
+
+
+

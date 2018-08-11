@@ -1,0 +1,247 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>1</span><span
+style='font-family:"Microsoft YaHei"'>、修改配置文件“<span lang=EN-US>/etc/rc.local</span>”，改为如下</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>touch /var/lock/subsys/local</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>INITTY=/dev/tty[1-8]</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>for tty in $INITTY; do</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>&nbsp;&nbsp;&nbsp; setleds -D +num &lt; $tty</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>done</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>2</span><span
+style='font-family:"Microsoft YaHei"'>、修改网卡开机启动</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>ONBOOT=yes&nbsp;&nbsp;&nbsp; </span></code><code><span
+  style='font-size:10.0pt;font-family:DengXian'>开机启动</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>3</span><span
+style='font-family:"Microsoft YaHei"'>、重启网络服务，修改完网卡配置文件之后，只有重启才能生效</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>[root@localhost ~]# service network restart</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='font-family:"Microsoft YaHei"'>Centos</span><span style='font-family:
+"Microsoft YaHei"'>默认的是使用<span lang=EN-US>dhcp</span>服务，自动分配<span lang=EN-US>ip</span>地址</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='font-family:"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Microsoft YaHei"'>二、配置的固定<span
+lang=EN-US>ip</span>地址</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>1</span><span
+style='font-family:"Microsoft YaHei"'>、添加<span lang=EN-US>ipaddr</span></span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>IPADDR=192.168.0.250</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>2</span><span
+style='font-family:"Microsoft YaHei"'>、添加<span lang=EN-US>NETMASK</span></span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>NETMASK=255.255.255.0</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>3</span><span
+style='font-family:"Microsoft YaHei"'>、添加<span lang=EN-US>GATEWAY</span></span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>GATEWAY=192.168.0.1</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>4</span><span
+style='font-family:"Microsoft YaHei"'>、添加<span lang=EN-US>DNS</span></span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>DNS1=119.29.29.29</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>5</span><span
+style='font-family:"Microsoft YaHei"'>、重启网络服务</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>[root@localhost ~]# service network restart</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>ps</span><span
+style='font-family:"Microsoft YaHei"'>：上述配置中，严格区分大小写。<span lang=EN-US>Dns</span>配置好之后，可以在<span
+lang=EN-US>/etc/resolv.conf</span>文件中看到，如下：</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 align=left width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;margin-left:6.0pt;
+ margin-right:6.0pt'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>[root@localhost ~]# cat /etc/resolv.conf </span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'># Generated by NetworkManager</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>nameserver 119.29.29.29</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Microsoft YaHei"'>三、图形界面配置<span
+lang=EN-US>ip</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Microsoft YaHei"'>用户可以通过图形界面来修改<span lang=EN-US>ip</span>，这样避免了复杂的命令，更加容易配置。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
