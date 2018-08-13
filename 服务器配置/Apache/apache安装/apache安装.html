@@ -1,0 +1,382 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+p.a, li.a, div.a
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:200%;
+	font-size:12.0pt;
+	font-family:"Microsoft YaHei";}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='line-height:200%'><b><span lang=EN-US
+style='font-family:"Microsoft YaHei"'>Apache</span></b><b><span
+style='font-family:"Microsoft YaHei"'>安装<span lang=EN-US>&nbsp;&nbsp; </span></span></b></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>1</span><span style='font-family:"Microsoft YaHei"'>、安装<span
+lang=EN-US>Apache</span>，使用命令“</span><code><span lang=EN-US style='font-size:
+10.0pt;line-height:200%;font-family:Menlo'>yum install httpd -y</span></code><span
+style='font-family:"Microsoft YaHei"'>”</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# yum install httpd -y</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Loaded plugins:
+  fastestmirror, refresh-packagekit, security</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Loading mirror
+  speeds from cached hostfile</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  | 4.0 kB&nbsp;&nbsp;&nbsp;&nbsp; 00:00 ... </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Setting up
+  Install Process</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>2</span><span style='font-family:"Microsoft YaHei"'>、启动<span
+lang=EN-US>apache</span></span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# service httpd start</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span style='font-size:
+  10.0pt;line-height:200%;font-family:DengXian'>正在启动</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'> httpd</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>httpd:
+  Could not reliably determine the server's fully qualified domain name, using localhost.localdomain
+  for ServerName</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]#</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>3</span><span style='font-family:"Microsoft YaHei"'>、设置<span
+lang=EN-US>apache</span>开机自启</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# chkconfig --level 5 httpd on </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# chkconfig --list httpd</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>httpd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   0:</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>关闭</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>4</span><span style='font-family:"Microsoft YaHei"'>、修改防火墙</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-family:
+"Microsoft YaHei"'>想要其他机器访问到该主机的<span lang=EN-US>apache</span>，要么关闭防火墙，要么就修改防火墙的配置</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; 1</span><span style='font-family:
+"Microsoft YaHei"'>）关闭防火墙，</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>在终端输入<span lang=EN-US>setup</span>命令</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# setup</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-family:
+"Microsoft YaHei"'>弹出窗口，选择防火墙</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; <img width=234 height=242 id="图片 1"
+src="apache安装.fld/image001.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-family:
+"Microsoft YaHei"'>弹出窗口，用空格关闭防火墙，保存退出（有<span lang=EN-US>*</span>是启动）</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=505 height=229
+id="图片 2" src="apache安装.fld/image002.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; 2</span><span style='font-family:
+"Microsoft YaHei"'>）修改防火墙配置，</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>在终端输入命令“<span lang=EN-US>setup</span>”，在弹出的框中选择“防火墙”，接着选择“定制”</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=501 height=227
+id="图片 8" src="apache安装.fld/image003.png"></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>使用空格键选中“<span lang=EN-US>http</span>“、”<span
+lang=EN-US>https</span>“，接着选择“转发”</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=472 height=297
+id="图片 9" src="apache安装.fld/image004.png"></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>选择“添加“</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=476 height=272
+id="图片 10" src="apache安装.fld/image005.png"></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>添加端口<span lang=EN-US>80</span>，协议<span
+lang=EN-US>tcp</span>，然后确定</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=337 height=224
+id="图片 11" src="apache安装.fld/image006.png"></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>回到最初的界面，“确定”</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=501 height=222
+id="图片 12" src="apache安装.fld/image007.png"></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>重启防火墙</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# service iptables restart</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：将链设置为政策</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>
+  ACCEPT</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>：</span></code><code><span lang=EN-US style='font-size:
+  10.0pt;line-height:200%;font-family:Menlo'>filter
+  nat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：清除防火墙规则：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：正在卸载模块：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>确定</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>iptables</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：应用防火墙规则：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]#</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>重启<span lang=EN-US>apache</span></span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# service httpd restart</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span style='font-size:
+  10.0pt;line-height:200%;font-family:DengXian'>停止</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'> httpd</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span style='font-size:
+  10.0pt;line-height:200%;font-family:DengXian'>正在启动</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'> httpd</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>：</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>httpd:
+  Could not reliably determine the server's fully qualified domain name, using
+  localhost.localdomain for ServerName</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  [</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>确定</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>5</span><span style='font-family:"Microsoft YaHei"'>、测试，在其他局域网电脑输入本机的<span
+lang=EN-US>ip</span>地址，看到如下界面代表<span lang=EN-US>apache</span>安装成功</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=992 height=228
+id="图片 13" src="apache安装.fld/image008.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+lang=EN-US>Copyright&nbsp;&nbsp;&nbsp; Email:zhytwj2018@163.com</span></p>
+
+</div>
+
+</body>
+
+</html>

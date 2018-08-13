@@ -1,0 +1,332 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+@font-face
+	{font-family:"Microsoft YaHei Light";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"\@Microsoft YaHei Light";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+p.a, li.a, div.a
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:200%;
+	font-size:12.0pt;
+	font-family:"Microsoft YaHei";}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='line-height:200%'><b><span lang=EN-US
+style='font-size:14.0pt;line-height:200%;font-family:"Microsoft YaHei"'>Apache</span></b><b><span
+style='font-size:14.0pt;line-height:200%;font-family:"Microsoft YaHei"'>配置文件</span></b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei Light"'>Apache</span><span
+style='font-family:"Microsoft YaHei Light"'>的配置文件默认路径是“<span lang=EN-US>/etc/httpd/conf/httpd.conf</span>”，编辑该文件就可以修改<span
+lang=EN-US>Apache</span>的配置<span lang=EN-US>&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>1</span><span style='font-family:"Microsoft YaHei"'>、设置网页主目录，参数<span
+lang=EN-US>DocumentRoot</span>就是网页存放的主目录。打开配置文件<span lang=EN-US>httpd.conf</span>，查找<span
+lang=EN-US>DocumentRoot</span>（大约<span lang=EN-US>292</span>行）</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># DocumentRoot:
+  The directory out of which you will serve your</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># documents. By
+  default, all requests are taken from this directory, but</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># symbolic links
+  and aliases may be used to point to other locations.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>DocumentRoot
+  &quot;/var/www/html&quot;&nbsp;&nbsp; //</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>当前默认是在</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&quot;/var/www/html&quot;</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>目录下，所有的网页必须放在这里</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>2</span><span style='font-family:"Microsoft YaHei"'>、设置连接端口，通过参数<span
+lang=EN-US>listen</span>来设置连接的端口，默认<span lang=EN-US>80.</span>（大约<span
+lang=EN-US>136</span>行）</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># Listen: Allows
+  you to bind Apache to specific IP addresses and/or</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># ports, in
+  addition to the default. See also the &lt;VirtualHost&gt;</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># directive.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># Change this to
+  Listen on specific IP addresses as shown below to </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># prevent Apache
+  from glomming onto all bound IP addresses (0.0.0.0)</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#Listen
+  12.34.56.78:80</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Listen 80</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>3</span><span style='font-family:"Microsoft YaHei"'>、设置连接超时，参数<span
+lang=EN-US>timeout</span>，当连接超过一定的空闲时间，就会自动断开。（大约<span lang=EN-US>68</span>行）</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:15.05pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:15.05pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># Timeout: The
+  number of seconds before receives and sends time out.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>Timeout 60</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>4</span><span style='font-family:"Microsoft YaHei"'>、设置字符集，参数</span><code><span
+lang=EN-US style='line-height:200%;font-family:"Microsoft YaHei"'>AddDefaultCharset</span></code><code><span
+style='line-height:200%;font-family:"Microsoft YaHei"'>，建议最好设置<span lang=EN-US>utf-8</span>，这是通用的。（大约<span
+lang=EN-US>753</span>行）</span></code></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:60.3pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:60.3pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># Specify a
+  default charset for all content served; this enables</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># interpretation
+  of all content as UTF-8 by default.&nbsp; To use the </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># default browser
+  choice (ISO-8859-1), or to allow the META tags</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># in HTML content
+  to override this choice, comment out this</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># directive:</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>AddDefaultCharset
+  UTF-8</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>5</span><span style='font-family:"Microsoft YaHei"'>、设置服务器名称，参数<span
+lang=EN-US>ServerName</span>。这是服务器的域名，必须有<span lang=EN-US>dns</span>解析才可以访问。如果你没有合法的域名，那么只能通过<span
+lang=EN-US>ip</span>地址来访问</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:74.3pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:74.3pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># ServerName
+  gives the name and port that the server uses to identify itself.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># This can often
+  be determined automatically, but we recommend you specify</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># it explicitly
+  to prevent problems during startup.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># If this is not
+  set to valid DNS name for your host, server-generated</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># redirections
+  will not work.&nbsp; See also the UseCanonicalName directive.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># If your host
+  doesn't have a registered DNS name, enter its IP address here.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># You will have
+  to access it by its address anyway, and this will make </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># redirections
+  work in a sensible way.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#ServerName
+  www.example.com:80</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>6</span><span style='font-family:"Microsoft YaHei"'>、设置<span
+lang=EN-US>keepalive</span>，提高网络效率，默认是关闭的。（大约<span lang=EN-US>76</span>行）</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># KeepAlive:
+  Whether or not to allow persistent connections (more than</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># one request per
+  connection). Set to &quot;Off&quot; to deactivate.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>KeepAlive Off</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>7</span><span style='font-family:"Microsoft YaHei"'>、设置<span
+lang=EN-US>keepaliverequest</span>，设置为<span lang=EN-US>0 </span>的时候没有限制，不过最好还是用默认值，或者自己根据情况来改变。（大约<span
+lang=EN-US>83</span>行）</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#
+  MaxKeepAliveRequests: The maximum number of requests to allow</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># during a
+  persistent connection. Set to 0 to allow an unlimited amount.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'># We recommend
+  you leave this number high, for maximum performance.</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>MaxKeepAliveRequests
+  100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>Copyright@david&nbsp;
+zhytwj2018@163.com</span></p>
+
+</div>
+
+</body>
+
+</html>

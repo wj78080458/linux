@@ -1,0 +1,308 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+p.a, li.a, div.a
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:200%;
+	font-size:12.0pt;
+	font-family:"Microsoft YaHei";}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='line-height:200%'><b><span style='font-size:14.0pt;
+line-height:200%;font-family:"Microsoft YaHei"'>本地<span lang=EN-US>yum </span></span></b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>本地<span lang=EN-US>yum</span>可以实现各种包的快速安装，避免漫长的下载过程<span
+lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>1</span><span style='font-family:"Microsoft YaHei"'>、找一个<span
+lang=EN-US>centos</span>的安装包，将其挂载的系统中</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# mount </span></code><code><span lang=EN-US style='font-size:10.0pt;
+  line-height:200%;font-family:Helvetica'>_</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>t
+  iso9660 </span></code><code><span lang=EN-US style='font-size:10.0pt;
+  line-height:200%;font-family:Helvetica'>_</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>loop
+  centos-i386.iso /mnt</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>2</span><span style='font-family:"Microsoft YaHei"'>、拷贝所有的内容到某个指定的文件夹，例如“<span
+lang=EN-US>/wj/centos-img/</span>”</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# mkdir /wj/centos-img</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# cp /mnt /wj/centos-img</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>3</span><span style='font-family:"Microsoft YaHei"'>、跳转的<span
+lang=EN-US>yum</span>的配置目录“</span><code><span lang=EN-US style='font-size:10.0pt;
+line-height:200%;font-family:Menlo'>/etc/yum.repos.d</span></code><span
+style='font-family:"Microsoft YaHei"'>”</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:15.05pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:15.05pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# cd /etc/yum.repos.d/</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  yum.repos.d]# ls</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>CentOS-Base.repo&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CentOS-Media.repo</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>CentOS-Debuginfo.repo&nbsp;
+  CentOS-Vault.repo</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>4</span><span style='font-family:"Microsoft YaHei"'>、将配置目录下的所有配置文件做备份</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:60.3pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:60.3pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  yum.repos.d]# cp CentOS-Base.repo CentOS-Base.repo.bak</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  yum.repos.d]# mv CentOS-Media.repo CentOS-Media.repo.bak</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  yum.repos.d]# mv CentOS-Debuginfo.repo CentOS-Debuginfo.repo.bak</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  yum.repos.d]# mv CentOS-Vault.repo CentOS-Vault.repo.bak</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>5</span><span style='font-family:"Microsoft YaHei"'>、编辑其中一个配置文件，这里用的是</span><code><span
+lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>CentOS-Base.repo</span></code></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:74.3pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:74.3pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  yum.repos.d]# vi CentOS-Base.repo</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[base]</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>name=CentOS-Base</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>这句话前面加</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>#</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>，相当于注释掉</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>baseurl=file:///wj/centos-img/&nbsp;&nbsp;
+  </span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>这里是</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>centos</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>包的路径，上面已经拷贝到</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>/wj/centos-img</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>gpgcheck=1&nbsp;&nbsp;
+  </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>gpgkey=file:///wj/centos-img/RPM-GPG-KEY-CentOS-6&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>注意这里的路径也有改变</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>enable=1&nbsp;&nbsp;
+  </span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>这里是</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>1</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>，代表使能当前的配置</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>6</span><span style='font-family:"Microsoft YaHei"'>、清除<span
+lang=EN-US>yum</span>的缓存</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# yum clean metadata</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# yum clean all</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>7</span><span style='font-family:"Microsoft YaHei"'>、测试，查看当前<span
+lang=EN-US>yum</span>配置是否成功</span></p>
+
+<table class=a0 border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.9pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# yum list</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span style='font-size:
+  10.0pt;line-height:200%;font-family:DengXian'>。。。</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>seahorse-plugins.i686&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  2.28.1-2.el6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>seekwatcher.noarch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  0.12-5.el6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>selinux-policy-doc.noarch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  3.7.19-231.el6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>selinux-policy-minimum.noarch&nbsp;&nbsp;&nbsp;&nbsp;
+  3.7.19-231.el6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span style='font-size:
+  10.0pt;line-height:200%;font-family:DengXian'>。。。</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>Copyright@david&nbsp;&nbsp;&nbsp;
+Email:zhytwj2018@163.com</span></p>
+
+</div>
+
+</body>
+
+</html>

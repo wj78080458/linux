@@ -1,0 +1,522 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='line-height:200%'><b><span style='font-size:14.0pt;
+line-height:200%;font-family:"Microsoft YaHei"'>设置服务开关</span></b></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+style='font-family:"Microsoft YaHei"'>用户可以设置某项服务开机启动或者关闭，有图形界面和命令两种方式</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-family:"Microsoft YaHei"'>一、图形界面</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>1</span><span style='font-family:"Microsoft YaHei"'>、在终端输入命令<span
+lang=EN-US>setup</span>，在弹出的界面选择“系统服务”</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=417 height=266
+id="图片 1" src="设置服务开关.fld/image001.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>2</span><span style='font-family:"Microsoft YaHei"'>、也可以直接在终端输入命令“<span
+lang=EN-US>ntsysv</span>”，得到如下界面</span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'><img width=417 height=265
+id="图片 2" src="设置服务开关.fld/image002.png"></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>3</span><span style='font-family:"Microsoft YaHei"'>、通过空格来修改开启或者关闭，上下左右键移动，<span
+lang=EN-US>tab</span>键回到“确定”或者“取消”，回车确认。</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-family:"Microsoft YaHei"'>二、命令方式</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>1</span><span style='font-family:"Microsoft YaHei"'>、通过命令“<span
+lang=EN-US>chkconfig</span>”来设置服务的默认启动或者关闭状态，该命令的用法如下</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:32.35pt'>
+  <td width=184 valign=top style='width:183.7pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>命令</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>说明</span></p>
+  </td>
+ </tr>
+ <tr style='height:32.35pt'>
+  <td width=184 valign=top style='width:183.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>chkconfig
+  --list</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>查看所有服务的启动状态</span></p>
+  </td>
+ </tr>
+ <tr style='height:32.35pt'>
+  <td width=184 valign=top style='width:183.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>chkconfig
+  _list </span><span style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>服务名</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>查看指定服务的启动状态</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=184 valign=top style='width:183.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>chkconfig
+  _add </span><span style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>服务名</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>增加指定的服务</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=184 valign=top style='width:183.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>chkconfig
+  _del </span><span style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>服务名</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>删除指定的服务</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=184 valign=top style='width:183.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>chkconfig
+  _level num(0~6) </span><span style='font-size:10.5pt;line-height:200%;
+  font-family:"Microsoft YaHei"'>服务名 <span lang=EN-US>on/off</span></span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>设置指定服务在某个<span lang=EN-US>level</span>的启动状态</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>2</span><span style='font-family:"Microsoft YaHei"'>、查看所有服务的启动状态</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# chkconfig --list</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>NetworkManager &nbsp;&nbsp; 0:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>abrt-ccpp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp; 0:</span></code><code><span style='font-size:10.0pt;
+  line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>abrtd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   0:</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>关闭</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>acpid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   0:</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>关闭</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>atd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   0:</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>关闭</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>auditd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   0:</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>关闭</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>autofs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   0:</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>关闭</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>3</span><span style='font-family:"Microsoft YaHei"'>、以<span
+lang=EN-US>nfs</span>服务为例，查看该服务在每个<span lang=EN-US>level</span>的启动状态</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:14.2pt'>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:14.2pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# chkconfig --list nfs</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>nfs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   0:</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>关闭</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>4</span><span style='font-family:"Microsoft YaHei"'>、设置<span
+lang=EN-US>nfs</span>服务在<span lang=EN-US>level5</span>开机启动，并查看结果</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# chkconfig --level 5 nfs on</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>[root@localhost
+  ~]# chkconfig --list nfs</span></code></p>
+  <p class=MsoNormal style='line-height:200%'><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>nfs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   0:</span></code><code><span style='font-size:10.0pt;line-height:200%;
+  font-family:DengXian'>关闭</span></code><code><span lang=EN-US
+  style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 1:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 2:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 3:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 4:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 5:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>启用</span></code><code><span
+  lang=EN-US style='font-size:10.0pt;line-height:200%;font-family:Menlo'>&nbsp; 6:</span></code><code><span
+  style='font-size:10.0pt;line-height:200%;font-family:DengXian'>关闭</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>5</span><span style='font-family:"Microsoft YaHei"'>、每个<span
+lang=EN-US>level</span>的意义</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:32.35pt'>
+  <td width=42 valign=top style='width:41.95pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>level</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>说明</span></p>
+  </td>
+ </tr>
+ <tr style='height:32.35pt'>
+  <td width=42 valign=top style='width:41.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>0</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>关机</span></p>
+  </td>
+ </tr>
+ <tr style='height:32.35pt'>
+  <td width=42 valign=top style='width:41.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>1</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>单用户模式</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=42 valign=top style='width:41.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>2</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>多用户命令模式，无网络</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=42 valign=top style='width:41.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>3</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>多用户命令模式，有网络</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=42 valign=top style='width:41.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>4</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>保留</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=42 valign=top style='width:41.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>5</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>图形界面的多用户模式</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=42 valign=top style='width:41.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US
+  style='font-size:10.5pt;line-height:200%;font-family:"Microsoft YaHei"'>6</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:10.5pt;
+  line-height:200%;font-family:"Microsoft YaHei"'>重启</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span lang=EN-US style='font-family:
+"Microsoft YaHei"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+lang=EN-US style='font-family:"Microsoft YaHei"'>Copyright@david&nbsp;&nbsp;&nbsp;
+Email:zhytwj2018@163.com</span></p>
+
+</div>
+
+</body>
+
+</html>

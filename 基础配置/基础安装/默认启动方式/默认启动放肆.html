@@ -1,0 +1,223 @@
+<html>
+
+<head>
+<meta name=标题 content="">
+<meta name=关键词 content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:Menlo;
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:12.0pt;
+	font-family:DengXian;}
+code
+	{font-family:Courier;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:DengXian;}
+.MsoChpDefault
+	{font-family:DengXian;}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft YaHei"'>默认启动方式</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>1</span><span
+style='font-family:"Microsoft YaHei"'>、可以通过配置文件“<span lang=EN-US>/etc/inittab</span>”来修改默认的启动方式，打开配置文件可以看到如下的内容</span></p>
+
+<table class=a border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=415 valign=top style='width:414.5pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'># Default runlevel. The runlevels used are:</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>#&nbsp;&nbsp; 0 - halt (Do NOT set initdefault to this)</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>#&nbsp;&nbsp; 1 - Single user mode</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>#&nbsp;&nbsp; 2 - Multiuser, without NFS (The same as 3, if you do not
+  have networking)</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>#&nbsp;&nbsp; 3 - Full multiuser mode</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>#&nbsp;&nbsp; 4 - unused</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>#&nbsp;&nbsp; 5 - X11</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>#&nbsp;&nbsp; 6 - reboot (Do NOT set initdefault to this)</span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'># </span></code></p>
+  <p class=MsoNormal><code><span lang=EN-US style='font-size:10.0pt;font-family:
+  Menlo'>id:5:initdefault:</span></code></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Microsoft YaHei"'>最后一行的就是默认的启动方式，我们可以将<span lang=EN-US>5</span>改成<span
+lang=EN-US>1</span>，这样就不会启动图形界面了。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>2</span><span
+style='font-family:"Microsoft YaHei"'>、关于<span lang=EN-US>id</span>后面的序号，说明如下</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width="97%"
+ style='width:97.0%;margin-left:24.1pt;border-collapse:collapse;border:none'>
+ <tr style='height:32.35pt'>
+  <td width=99 valign=top style='width:98.65pt;border:solid windowtext 1.0pt;
+  background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Microsoft YaHei"'>level</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#E7E6E6;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Microsoft YaHei"'>说明</span></p>
+  </td>
+ </tr>
+ <tr style='height:32.35pt'>
+  <td width=99 valign=top style='width:98.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Microsoft YaHei"'>0</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Microsoft YaHei"'>关机</span></p>
+  </td>
+ </tr>
+ <tr style='height:32.35pt'>
+  <td width=99 valign=top style='width:98.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Microsoft YaHei"'>1</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.35pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Microsoft YaHei"'>单用户模式</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:98.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Microsoft YaHei"'>2</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Microsoft YaHei"'>多用户命令模式，无网络</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:98.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Microsoft YaHei"'>3</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Microsoft YaHei"'>多用户命令模式，有网络</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:98.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Microsoft YaHei"'>4</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Microsoft YaHei"'>保留</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:98.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Microsoft YaHei"'>5</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Microsoft YaHei"'>图形界面的多用户模式</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:98.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Microsoft YaHei"'>6</span></p>
+  </td>
+  <td width=390 valign=top style='width:389.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Microsoft YaHei"'>重启</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;&nbsp;&nbsp;&nbsp; <b>ps</b></span><b><span
+style='font-family:"Microsoft YaHei"'>：在安装了图形界面的系统中，默认启动图形界面。</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Microsoft YaHei"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-family:"Microsoft YaHei"'>Copyright@david&nbsp;&nbsp;&nbsp; Email:zhytwj2018@163.com</span></p>
+
+</div>
+
+</body>
+
+</html>

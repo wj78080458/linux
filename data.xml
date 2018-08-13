@@ -71,8 +71,70 @@
 	<showLevel>low</showLevel>
 </item>
 
+<item data="本地yum源">
+	<keyword>yum 本地 repo clean list</keyword>
+	<abstract>搭建本地yum源，实现快速安装软件</abstract>
+	<showLevel>low</showLevel>
+</item>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+<item data="apache安装">
+	<keyword>apache 安装 httpd setup 防火墙 iptables 80</keyword>
+	<abstract>通过yum方式安装apache服务，配置防火墙，让apache可以启动并被访问</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="apache配置文件">
+	<keyword>apache 配置 conf DocumentRoot 主目录 listen 端口 timeout 超时 Charset 字符 ServerName 名字 域名 keepalive</keyword>
+	<abstract>简单认识Apache的配置文件httpd.conf，通过配置实现Apache的基础功能</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="apache支持php">
+	<keyword>apache php 图形 验证 phpsysinfo gd</keyword>
+	<abstract>让Apache支持php功能，安装gd图形库以及phpsysinfo，丰富php的功能</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="apache支持cgi">
+	<keyword>apache cgi</keyword>
+	<abstract>让Apache支持cgi功能，需要开启httpd.conf中的一个开关</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="apache支持ssl">
+	<keyword>apache ssl 443</keyword>
+	<abstract>让Apache支持ssl功能，需要开启安装ssl模块，同时还要讲443端口添加到防火墙</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="apache支持用户认证">
+	<keyword>apache 用户 认证 AllowOverride htpassw htacces</keyword>
+	<abstract>让Apache在访问某些文件夹的时候提供认证功能，要求用户输入用户名和密码</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
+
+<item data="安装tomcat">
+	<keyword>Tomcat 安装 8080 防火墙 iptables</keyword>
+	<abstract>安装Tomcat，配置防火墙增加8080端口，让Tomcat可以正常运行</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
+
+<item data="安装mysql">
+	<keyword>mysql 安装 用户 密码 端口</keyword>
+	<abstract>安装mysql服务，设置超级用户密码，设置端口号</abstract>
+	<showLevel>low</showLevel>
+</item>
