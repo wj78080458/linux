@@ -93,7 +93,7 @@
 
 
 <item data="apache安装">
-	<keyword>apache 安装 httpd setup 防火墙 iptables 80</keyword>
+	<keyword>apache 安装 httpd setup 防火墙 iptables 80 端口 port</keyword>
 	<abstract>通过yum方式安装apache服务，配置防火墙，让apache可以启动并被访问</abstract>
 	<showLevel>low</showLevel>
 </item>
@@ -126,7 +126,7 @@
 
 
 <item data="安装tomcat">
-	<keyword>Tomcat 安装 8080 防火墙 iptables</keyword>
+	<keyword>Tomcat 安装 8080 防火墙 iptables 端口 port</keyword>
 	<abstract>安装Tomcat，配置防火墙增加8080端口，让Tomcat可以正常运行</abstract>
 	<showLevel>low</showLevel>
 </item>
@@ -134,7 +134,111 @@
 
 
 <item data="安装mysql">
-	<keyword>mysql 安装 用户 密码 端口</keyword>
+	<keyword>mysql 安装 用户 密码 端口 port</keyword>
 	<abstract>安装mysql服务，设置超级用户密码，设置端口号</abstract>
 	<showLevel>low</showLevel>
 </item>
+<item data="使用mysql">
+	<keyword>mysql 登录 退出 创建 删除 权限 create drop quit 授权 grant privilege</keyword>
+	<abstract>mysql简单的使用规则，包括登录、退出、创建、删除、授权等</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="忘记root密码">
+	<keyword>mysql root 密码 忘记 重设</keyword>
+	<abstract>当我们不小心忘记root密码的时候，可以通过此方式来重设root密码。</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="phpMyAdmin工具">
+	<keyword>mysql phpMyAdmin 图形</keyword>
+	<abstract>安装phpMyAdmin工具，实现图形化界面管理，这样操作数据库更加简单</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
+
+<item data="安装vsftpd">
+	<keyword>ftp vsftpd 端口 port listen</keyword>
+	<abstract>安装vsftpd，使用lftp测试安装是否成功，修改端口号</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="限制带宽">
+	<keyword>ftp vsftpd 限制 带宽 匿名 本地 anon local rate user_config_dir</keyword>
+	<abstract>设置匿名用户的带宽、设置本地用户的带宽，设置指定用户的带宽</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="限制ip">
+	<keyword>ftp vsftpd 限制 ip hosts deny allow clients tcp_wrapper wrapper</keyword>
+	<abstract>设置某些特定的ip可以访问ftp服务器，同时也可以设置一个ip的最大连接数</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="用户黑白名单">
+	<keyword>ftp vsftpd 限制 黑名单 白名单 user_list user list deny</keyword>
+	<abstract>通过userlist_deny参数来确定黑白名单，将黑白名单用户名存放在userlist文件中</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="其他配置">
+	<keyword>ftp vsftpd 允许 匿名 本地 登录 写 上传 掩码 创建 目录 获取 空闲 数据 超时 切换 递归</keyword>
+	<abstract>详细的解释了vsftpd的配置文件</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
+
+<item data="安装bind">
+	<keyword>bind dns bind-chroot bind-util named forward 53 dig cache-only</keyword>
+	<abstract>安装bind软件，配置一个cache-only dns服务器，需要开启tcp和udp的53端口</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="配置bind">
+	<keyword>bind dns bind-chroot bind-util named 53 zone 正向 反向 解析 mailsrv ptr mx a</keyword>
+	<abstract>配置bind服务，实现正向解析和反向解析</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
+
+<item data="安装samba">
+	<keyword>samba 文件服务器 secure smb 共享 137 138 139 445 端口 testparm</keyword>
+	<abstract>安装samba，实现Linux和windows的文件共享，使用端口137、138、139、445</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="安装samba">
+	<keyword>samba 文件服务器 secure smb 共享 配置 tdbsam pdbedit 账户</keyword>
+	<abstract>配置samba级别为user，添加可以访问的用户，使用命令pdbedit</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="安装swat">
+	<keyword>samba 文件服务器 smb swat xinetd 图形 界面 管理</keyword>
+	<abstract>安装swat，这是一个samba的图形管理界面，更加方便的配置samba服务</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
+
+<item data="安装squid">
+	<keyword>代理 proxy squid 3218</keyword>
+	<abstract>安装squid服务，将主机设置成一个代理服务器</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="squid连接限制">
+	<keyword>代理 proxy squid 3218 限制 网段 ip 域名 网址 时间 黑名单 白名单 acl</keyword>
+	<abstract>通过acl语法，配置squid，让代理实现网络控制。</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="squid缓存">
+	<keyword>代理 proxy squid 3218 缓存 swap state</keyword>
+	<abstract>配置代理缓存，大小默认100M，需要定时清理缓存</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="代理认证">
+	<keyword>代理 proxy squid 认证 auth htpasswd passwd param acl</keyword>
+	<abstract>给代理添加用户名和密码认证，这样代理会更加安全</abstract>
+	<showLevel>low</showLevel>
+</item>
+<item data="dansguardian">
+	<keyword>代理 proxy squid dansguardian 屏蔽 限制 下载 格式 网站 关键字 不良</keyword>
+	<abstract>dansguardian可以有效的管理proxy代理服务器，拦截不恰当的网站、阻止下载非法内容</abstract>
+	<showLevel>low</showLevel>
+</item>
+
+
