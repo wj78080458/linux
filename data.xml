@@ -2,60 +2,90 @@
 	<keyword>ip 静态 动态 dhcp dns 网卡 配置 network</keyword>
 	<abstract>网络配置文件/etc/sysconfig/network-scripts/ifcfg-eth0，可以通过它配置ip等网络信息。同时也可以用图形化界面来配置</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="禁止ping">
 	<keyword>ping 禁止 ICMP</keyword>
 	<abstract>通过配置ICMP协议来启用或者禁止其他机器ping该主机</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="安装centos">
 	<keyword>安装 系统 centos</keyword>
 	<abstract>如何通过光盘安装centos</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="centos分辨率">
 	<keyword>分辨率 centos</keyword>
 	<abstract>centos在虚拟机中默认只有800*600的分辨率，我们可以通过修改grub文件来配置分辨率</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="禁用ipv6">
 	<keyword>ipv6 禁用</keyword>
 	<abstract>通过配置文件，禁止使用ipv6，这样可以提高网络效率</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="自动纠错路径">
 	<keyword>纠错 路径 bashrc</keyword>
 	<abstract>如果输入的路径出错少，那么可以通过修改配置文件，然系统自己来纠错</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="登录前后信息">
 	<keyword>登录 信息 motd issue</keyword>
 	<abstract>通过修改配置文件，登录前或者登录后显示的内容</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="开机等待时间">
 	<keyword>开机 等待 时间 grub menu</keyword>
 	<abstract>可以自定义开机等待时间，建议在2s以上</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="开机启动数字键盘">
 	<keyword>启动 开机 数字 键盘 rc.local</keyword>
 	<abstract>修改rc.local文件，实现开机启动数字键盘</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="设置服务开关">
 	<keyword>服务 ntsysv setup 开关 chkconfig level</keyword>
 	<abstract>通过图形界面可以修改服务默认启动状态，也可以通过chkconfig命令来实现</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 
@@ -63,18 +93,27 @@
 	<keyword>启动 方式 inittab</keyword>
 	<abstract>通过inittab可以修改默认的系统启动方式</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="关闭selinux">
 	<keyword>selinux setenforce getenforce</keyword>
 	<abstract>可以通过各种配置方式来关闭selinux，建议使用文中的第二种方式</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 <item data="本地yum源">
 	<keyword>yum 本地 repo clean list</keyword>
 	<abstract>搭建本地yum源，实现快速安装软件</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 
@@ -96,31 +135,49 @@
 	<keyword>apache 安装 httpd setup 防火墙 iptables 80 端口 port</keyword>
 	<abstract>通过yum方式安装apache服务，配置防火墙，让apache可以启动并被访问</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="apache配置文件">
 	<keyword>apache 配置 conf DocumentRoot 主目录 listen 端口 timeout 超时 Charset 字符 ServerName 名字 域名 keepalive</keyword>
 	<abstract>简单认识Apache的配置文件httpd.conf，通过配置实现Apache的基础功能</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="apache支持php">
 	<keyword>apache php 图形 验证 phpsysinfo gd</keyword>
 	<abstract>让Apache支持php功能，安装gd图形库以及phpsysinfo，丰富php的功能</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="apache支持cgi">
 	<keyword>apache cgi</keyword>
 	<abstract>让Apache支持cgi功能，需要开启httpd.conf中的一个开关</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="apache支持ssl">
 	<keyword>apache ssl 443</keyword>
 	<abstract>让Apache支持ssl功能，需要开启安装ssl模块，同时还要讲443端口添加到防火墙</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="apache支持用户认证">
 	<keyword>apache 用户 认证 AllowOverride htpassw htacces</keyword>
 	<abstract>让Apache在访问某些文件夹的时候提供认证功能，要求用户输入用户名和密码</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 
@@ -129,6 +186,9 @@
 	<keyword>Tomcat 安装 8080 防火墙 iptables 端口 port</keyword>
 	<abstract>安装Tomcat，配置防火墙增加8080端口，让Tomcat可以正常运行</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 
@@ -137,21 +197,33 @@
 	<keyword>mysql 安装 用户 密码 端口 port</keyword>
 	<abstract>安装mysql服务，设置超级用户密码，设置端口号</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="使用mysql">
 	<keyword>mysql 登录 退出 创建 删除 权限 create drop quit 授权 grant privilege</keyword>
 	<abstract>mysql简单的使用规则，包括登录、退出、创建、删除、授权等</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="忘记root密码">
 	<keyword>mysql root 密码 忘记 重设</keyword>
 	<abstract>当我们不小心忘记root密码的时候，可以通过此方式来重设root密码。</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="phpMyAdmin工具">
 	<keyword>mysql phpMyAdmin 图形</keyword>
 	<abstract>安装phpMyAdmin工具，实现图形化界面管理，这样操作数据库更加简单</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 
@@ -160,26 +232,41 @@
 	<keyword>ftp vsftpd 端口 port listen</keyword>
 	<abstract>安装vsftpd，使用lftp测试安装是否成功，修改端口号</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="限制带宽">
 	<keyword>ftp vsftpd 限制 带宽 匿名 本地 anon local rate user_config_dir</keyword>
 	<abstract>设置匿名用户的带宽、设置本地用户的带宽，设置指定用户的带宽</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="限制ip">
 	<keyword>ftp vsftpd 限制 ip hosts deny allow clients tcp_wrapper wrapper</keyword>
 	<abstract>设置某些特定的ip可以访问ftp服务器，同时也可以设置一个ip的最大连接数</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="用户黑白名单">
 	<keyword>ftp vsftpd 限制 黑名单 白名单 user_list user list deny</keyword>
 	<abstract>通过userlist_deny参数来确定黑白名单，将黑白名单用户名存放在userlist文件中</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="其他配置">
 	<keyword>ftp vsftpd 允许 匿名 本地 登录 写 上传 掩码 创建 目录 获取 空闲 数据 超时 切换 递归</keyword>
 	<abstract>详细的解释了vsftpd的配置文件</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 
@@ -188,11 +275,17 @@
 	<keyword>bind dns bind-chroot bind-util named forward 53 dig cache-only</keyword>
 	<abstract>安装bind软件，配置一个cache-only dns服务器，需要开启tcp和udp的53端口</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="配置bind">
 	<keyword>bind dns bind-chroot bind-util named 53 zone 正向 反向 解析 mailsrv ptr mx a</keyword>
 	<abstract>配置bind服务，实现正向解析和反向解析</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 
@@ -201,16 +294,25 @@
 	<keyword>samba 文件服务器 secure smb 共享 137 138 139 445 端口 testparm</keyword>
 	<abstract>安装samba，实现Linux和windows的文件共享，使用端口137、138、139、445</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="安装samba">
 	<keyword>samba 文件服务器 secure smb 共享 配置 tdbsam pdbedit 账户</keyword>
 	<abstract>配置samba级别为user，添加可以访问的用户，使用命令pdbedit</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="安装swat">
 	<keyword>samba 文件服务器 smb swat xinetd 图形 界面 管理</keyword>
 	<abstract>安装swat，这是一个samba的图形管理界面，更加方便的配置samba服务</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 
 
@@ -219,26 +321,173 @@
 	<keyword>代理 proxy squid 3218</keyword>
 	<abstract>安装squid服务，将主机设置成一个代理服务器</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="squid连接限制">
 	<keyword>代理 proxy squid 3218 限制 网段 ip 域名 网址 时间 黑名单 白名单 acl</keyword>
 	<abstract>通过acl语法，配置squid，让代理实现网络控制。</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="squid缓存">
 	<keyword>代理 proxy squid 3218 缓存 swap state</keyword>
 	<abstract>配置代理缓存，大小默认100M，需要定时清理缓存</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="代理认证">
 	<keyword>代理 proxy squid 认证 auth htpasswd passwd param acl</keyword>
 	<abstract>给代理添加用户名和密码认证，这样代理会更加安全</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
 <item data="dansguardian">
 	<keyword>代理 proxy squid dansguardian 屏蔽 限制 下载 格式 网站 关键字 不良</keyword>
 	<abstract>dansguardian可以有效的管理proxy代理服务器，拦截不恰当的网站、阻止下载非法内容</abstract>
 	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
 </item>
+
+
+
+<item data="ssh登录">
+	<keyword>ssh sshd 登录 root 用户 配置</keyword>
+	<abstract>设置ssh为指定的用户登录，一般会关闭root用户登录</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+<item data="ssh配置">
+	<keyword>ssh sshd 超时 空闲 配置 连接</keyword>
+	<abstract>设置ssh输入密码时间，以及空闲时间，超时会自动断开连接</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+
+
+
+
+<item data="安装telnet">
+	<keyword>telnet xinetd 安装 23 端口 服务器 客户端 telnet-server</keyword>
+	<abstract>设置ssh输入密码时间，以及空闲时间，超时会自动断开连接</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+<item data="配置telnet">
+	<keyword>telnet xinetd 限时 时间 连接数 ip 网段 only_from no_access access_times instances root</keyword>
+	<abstract>设置telnet，设置允许连接的网段、ip、最大连接数、时间等</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+
+
+
+
+<item data="配置ntp">
+	<keyword>ntp 时间 同步 123 ndpdate</keyword>
+	<abstract>ntp就是网络时间同步的服务，时间的准确性非常重要，很多数据在记录时都要知道准确的时间。网上有很多站点，一般国内会设置匹配中科院国家授时中心的时间。</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item data="安装dovecot">
+	<keyword>docevot 邮件 接收 143 110</keyword>
+	<abstract>Dovecot是CentOS系统中著名的POP3/IMAP服务器实现。POP3/IMAP是从邮件服务器中读取邮件时使用的协议，POP3将邮件全部从服务器中拖取下来；IMAP则每次从服务器获取邮件名等关键信息，要读某封邮件时，才从服务器下载。</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+
+
+
+
+<item data="安装postfix">
+	<keyword>postfix 邮件 发送 25 main.conf</keyword>
+	<abstract>postfix是一个快速、易于管理、安全性高的邮件发送服务，可以配合dovecot实现一个完美的邮箱服务器。</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+<item data="配置postfix">
+	<keyword>postfix 邮件 发送 认证 sasl</keyword>
+	<abstract>在邮箱中加入认证功能，那么不在relay配置范围内的用户，只要用户名和密码正确，就可以发送邮件</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+
+
+
+
+<item data="安装openwebmail">
+	<keyword>openwebmail 邮件 系统 安装 界面 cgi suidperl dbmopen passwdfile passwdmkdb</keyword>
+	<abstract>openwebmail提供了可视化的邮件管理系统，它运行在Apache环境下。</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+<item data="配置openwebmail">
+	<keyword>openwebmail 邮件 系统 界面 logo 链接 root 附件 域名 名称 重定向</keyword>
+	<abstract>通过修改配置文件，定制一个适合用户使用的openwebmail邮件系统</abstract>
+	<showLevel>low</showLevel>
+	<category></category>
+	<reserve1></reserve1>
+	<reserve2></reserve2>
+</item>
+
+
+
+
+
+
+
+
+
+
 
 
